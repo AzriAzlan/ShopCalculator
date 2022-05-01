@@ -9,6 +9,9 @@ import java.sql.Statement;
 
 public class SQLConnection {
 	
+	private Connection con = null;
+	private Statement st = null;
+	
 	//private reference to object of class
 	private static SQLConnection sqlConn = new SQLConnection();
 	
@@ -25,9 +28,6 @@ public class SQLConnection {
 		
 	}
 	
-	
-	private Connection con = null;
-	private Statement st = null;
 	
 	//method to connect to mySQL database
 	public Statement getSQLConnection() {
